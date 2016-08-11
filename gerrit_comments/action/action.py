@@ -45,6 +45,20 @@ def find_comments(config):
         print comment_querystr
         result = restbase.GerritRestAPI().get(comment_querystr)
         print '\n',result,'\n'
-
-        for x in result:
-            print x
+        comments = []
+        change_id = config[u'change_id']
+        project = config[u'project']
+        for filename in result.keys():
+            attr = {}
+            name = result[filename][u'name']
+            line = result[filename][u'line']
+            time = result[filename][u'time'].split()[0]
+            message = result[filename][u'message']
+            attr[u'project'] = project
+            attr[u'change_id'] = change_id
+            attr[u'author'] = name
+            attr[u'time'] = time
+            attr[u'file'] = filename
+            attr[u'line'] = line
+            attr[u'message'] = message
+            print attr
