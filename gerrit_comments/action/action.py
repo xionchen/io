@@ -3,6 +3,8 @@
 # Author: Xion Chen  <xionchen@foxmail.com>
 
 import restbase
+import csv
+
 
 def find_changes(config):
     """
@@ -26,7 +28,7 @@ def find_changes(config):
     for x in result:
         attr = {}
         # print len(x['revisions'])
-        attr[u'change_id'] = x[u'change_id']
+        attr[u'id'] = x[u'id']
         attr[u'project'] = x[u'project']
         attr[u'revisions_numbers'] = len(x['revisions'])
         parsed_result.append(attr)
@@ -36,29 +38,34 @@ def find_comments(config):
     """
 
     :param config:{project, change_id, revisions_numbers}
-    :return:{project, author, time,file, corereveiw,comment,}
+    :return:[{project, author, time,file, corereveiw,comment,}]
     """
+    comments = []
     for i in range(1,config['revisions_numbers']+1):
         comment_querystr = '/changes/%s/revisions/%d/comments' \
-                           % (config[u'change_id'],i)
+                           % (config[u'id'],i)
 
         print comment_querystr
         result = restbase.GerritRestAPI().get(comment_querystr)
-        print '\n',result,'\n'
-        comments = []
-        change_id = config[u'change_id']
+
+
+        change_id = config[u'id']
         project = config[u'project']
         for filename in result.keys():
-            attr = {}
-            name = result[filename][u'name']
-            line = result[filename][u'line']
-            time = result[filename][u'time'].split()[0]
-            message = result[filename][u'message']
-            attr[u'project'] = project
-            attr[u'change_id'] = change_id
-            attr[u'author'] = name
-            attr[u'time'] = time
-            attr[u'file'] = filename
-            attr[u'line'] = line
-            attr[u'message'] = message
-            print attr
+            for comment in result[filename]:
+                attr = {}
+                name = comment[u'author'][u'name']
+                line = comment[u'line']
+                time = comment[u'updated'].split()[0]
+                message = comment[u'message']
+                attr[u'project'] = project
+                attr[u'change_id'] = change_id
+                attr[u'author'] = name
+                attr[u'time'] = time
+                attr[u'file'] = filename
+                attr[u'line'] = line
+                attr[u'message'] = message
+                comments.append(attr)
+    return comments
+
+

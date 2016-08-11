@@ -1,0 +1,54 @@
+openstack/neutron,openstack%2Fneutron~master~I160cecb76fb736307e5937122c84cdc0546207b6,Manjeet Singh Bhatia,2016-08-06,doc/source/devref/db_models.rst,21,Done
+openstack/neutron,openstack%2Fneutron~master~I160cecb76fb736307e5937122c84cdc0546207b6,Miguel Lavalle,2016-08-05,doc/source/devref/db_models.rst,21,We can probably get rid of this
+openstack/neutron,openstack%2Fneutron~master~I160cecb76fb736307e5937122c84cdc0546207b6,Miguel Lavalle,2016-08-05,doc/source/devref/db_models.rst,27,"""a new"" maybe?"
+openstack/neutron,openstack%2Fneutron~master~I160cecb76fb736307e5937122c84cdc0546207b6,Miguel Lavalle,2016-08-05,doc/source/devref/db_models.rst,28,You have a white space here
+openstack/neutron,openstack%2Fneutron~master~I160cecb76fb736307e5937122c84cdc0546207b6,Miguel Lavalle,2016-08-05,doc/source/devref/db_models.rst,33,did you mean 'module' or 'file' perhaps?
+openstack/neutron,openstack%2Fneutron~master~I160cecb76fb736307e5937122c84cdc0546207b6,Manjeet Singh Bhatia,2016-08-06,doc/source/devref/db_models.rst,33,module! thanks for pointing out
+openstack/neutron,openstack%2Fneutron~master~I160cecb76fb736307e5937122c84cdc0546207b6,Manjeet Singh Bhatia,2016-08-06,doc/source/devref/db_models.rst,36,Done
+openstack/neutron,openstack%2Fneutron~master~I160cecb76fb736307e5937122c84cdc0546207b6,Miguel Lavalle,2016-08-05,doc/source/devref/db_models.rst,36,Duplicate
+openstack/neutron,openstack%2Fneutron~master~I160cecb76fb736307e5937122c84cdc0546207b6,Manjeet Singh Bhatia,2016-08-06,doc/source/devref/db_models.rst,48,Done
+openstack/neutron,openstack%2Fneutron~master~I160cecb76fb736307e5937122c84cdc0546207b6,Miguel Lavalle,2016-08-05,doc/source/devref/db_models.rst,48,separated
+openstack/neutron,openstack%2Fneutron~master~I160cecb76fb736307e5937122c84cdc0546207b6,Ankur,2016-08-08,doc/source/devref/db_models.rst,18,s/devref/documentation
+openstack/neutron,openstack%2Fneutron~master~I160cecb76fb736307e5937122c84cdc0546207b6,Manjeet Singh Bhatia,2016-08-08,doc/source/devref/db_models.rst,18,Done
+openstack/neutron,openstack%2Fneutron~master~I160cecb76fb736307e5937122c84cdc0546207b6,Ankur,2016-08-08,doc/source/devref/db_models.rst,25,"Mixin capitalized here, but not in previous sentence. Keep consistent"
+openstack/neutron,openstack%2Fneutron~master~I160cecb76fb736307e5937122c84cdc0546207b6,Manjeet Singh Bhatia,2016-08-08,doc/source/devref/db_models.rst,25,Done
+openstack/neutron,openstack%2Fneutron~master~I160cecb76fb736307e5937122c84cdc0546207b6,Ankur,2016-08-08,doc/source/devref/db_models.rst,26,"""queries that will be replaced""... Sentence kind of confusing. reword/break up."
+openstack/neutron,openstack%2Fneutron~master~I160cecb76fb736307e5937122c84cdc0546207b6,Manjeet Singh Bhatia,2016-08-08,doc/source/devref/db_models.rst,26,Done
+openstack/neutron,openstack%2Fneutron~master~I160cecb76fb736307e5937122c84cdc0546207b6,Manjeet Singh Bhatia,2016-08-08,doc/source/devref/db_models.rst,28,Done
+openstack/neutron,openstack%2Fneutron~master~I160cecb76fb736307e5937122c84cdc0546207b6,Ankur,2016-08-08,doc/source/devref/db_models.rst,28,"""Mixin"" ditto above"
+openstack/neutron,openstack%2Fneutron~master~I160cecb76fb736307e5937122c84cdc0546207b6,Manjeet Singh Bhatia,2016-08-08,doc/source/devref/db_models.rst,32,Done
+openstack/neutron,openstack%2Fneutron~master~I160cecb76fb736307e5937122c84cdc0546207b6,Ankur,2016-08-08,doc/source/devref/db_models.rst,32,"add ""-"" under the 's' in Definitions"
+openstack/neutron,openstack%2Fneutron~master~I160cecb76fb736307e5937122c84cdc0546207b6,Manjeet Singh Bhatia,2016-08-08,doc/source/devref/db_models.rst,43,"bullet point make sense it is a long process, involving different steps, which is not in this case,"
+openstack/neutron,openstack%2Fneutron~master~I160cecb76fb736307e5937122c84cdc0546207b6,Ankur,2016-08-08,doc/source/devref/db_models.rst,43,"Potentially use bullet points to describe dir.
+
+Similar to https://github.com/openstack/horizon/blob/master/doc/source/quickstart.rst towards the bottom under ""Structure"""
+openstack/neutron,openstack%2Fneutron~master~I160cecb76fb736307e5937122c84cdc0546207b6,Mohit Malik,2016-08-08,doc/source/devref/db_models.rst,48,This review patch has been abandoned. Should we update this with the other proposal which was mentioned by Henry in https://review.openstack.org/#/c/348562/
+openstack/neutron,openstack%2Fneutron~master~I160cecb76fb736307e5937122c84cdc0546207b6,Manjeet Singh Bhatia,2016-08-08,doc/source/devref/db_models.rst,48,thanks for pointing out I am gonna remove this
+openstack/neutron,openstack%2Fneutron~master~I160cecb76fb736307e5937122c84cdc0546207b6,Ihar Hrachyshka,2016-08-09,neutron/db/models/README,3,Done
+openstack/neutron,openstack%2Fneutron~master~I160cecb76fb736307e5937122c84cdc0546207b6,Ihar Hrachyshka,2016-08-09,neutron/db/models/README,3,we should also mention that names of modules should use singular form for nouns. port.py not ports.py.
+openstack/neutron,openstack%2Fneutron~master~I160cecb76fb736307e5937122c84cdc0546207b6,Ihar Hrachyshka,2016-08-09,doc/source/devref/db_models.rst,26,provide
+openstack/neutron,openstack%2Fneutron~master~I160cecb76fb736307e5937122c84cdc0546207b6,Ihar Hrachyshka,2016-08-09,doc/source/devref/db_models.rst,26,Done
+openstack/neutron,openstack%2Fneutron~master~I32b0de9c452cf973d687c72e8381584012c9f3b4,Oleg Bondarev,2016-08-09,neutron/plugins/ml2/drivers/l2pop/mech_driver.py,44,Done
+openstack/neutron,openstack%2Fneutron~master~I32b0de9c452cf973d687c72e8381584012c9f3b4,Kevin Benton,2016-08-09,neutron/plugins/ml2/drivers/l2pop/mech_driver.py,44,"In case 'fixed_ips' aren't eagerly loaded with the port model, just adjust this to
+
+if not port or not port.get('fixed_ips'):
+
+that will eliminate any concern over concurrent DB deletion without the expensive call to get_port"
+openstack/neutron,openstack%2Fneutron~master~I32b0de9c452cf973d687c72e8381584012c9f3b4,venkata anil,2016-08-09,neutron/plugins/ml2/drivers/l2pop/mech_driver.py,44,+1
+openstack/neutron,openstack%2Fneutron~master~I32b0de9c452cf973d687c72e8381584012c9f3b4,Kevin Benton,2016-08-09,neutron/plugins/ml2/drivers/l2pop/mech_driver.py,49,"Don't call get_port separately, that will make this even more expensive with lots of queries. Once the relationship is referenced, it's safe to use."
+openstack/neutron,openstack%2Fneutron~master~I32b0de9c452cf973d687c72e8381584012c9f3b4,venkata anil,2016-08-09,neutron/plugins/ml2/drivers/l2pop/mech_driver.py,49,"still port can be removed while accessing its attributes in 47-49 as it is a db object [1].
+Other callers of _get_port_fdb_entries are passing port_dict and only [1] is passing db object. So we can convert db object to port_dict to make arguments for _get_port_fdb_entries consistent and call this function at [1] like below
+
+if l2pop_db.get_agent_ip(agent) == agent_ip:
+ port_dict = None
+ try:
+   port_dict = self._core_plugin.get_port(context, binding.port.id)               
+  except:
+    ...
+ if port_dict:
+      fdbs.extend(self._get_port_fdb_entries(port_dict)
+
+or 
+put [1] in try block so that we don't add port to fdb if it is removed.
+
+[1] https://github.com/openstack/neutron/blob/master/neutron/plugins/ml2/drivers/l2pop/mech_driver.py#L183"
