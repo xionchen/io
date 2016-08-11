@@ -21,7 +21,10 @@ dict_writer = csv.DictWriter(file('test.csv','wb'),fieldnames=title)
 
 for x in action.action.find_changes(config):
     comments = action.action.find_comments(x)
-    print comments
+    for comment in comments:
+        for key in comment.keys():
+            s = comment[key]
+            comment[key] = (s.encode('utf-8' if type(s) is unicode else s))
     dict_writer.writerows(comments)
 
 
